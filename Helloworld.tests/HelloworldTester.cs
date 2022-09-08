@@ -14,4 +14,16 @@ public class HelloworldTester
         var output = writer.GetStringBuilder().ToString().TrimEnd();
         output.Should().Be("Hello world!");
     }
+
+    [Fact]
+    public void LeapYearFuncTester()
+    {
+        var runner = new Program();
+        runner.LeapYear(2000).Should().Be(true);
+        runner.LeapYear(1).Should().Be(false);
+        runner.LeapYear(200).Should().Be(false);
+        runner.LeapYear(1753).Should().Be(false);
+        runner.LeapYear(2100).Should().Be(false);
+        runner.LeapYear(1996).Should().Be(true);
+    }
 }
