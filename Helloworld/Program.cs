@@ -4,7 +4,10 @@ public class Program
 {
     private static void Main(String[] args)
     {
-        Console.WriteLine("Hello world!");
+        string input = Console.ReadLine();
+        var runner = new Program();
+        var cleansed = Convert.ToInt32(input);
+        Console.WriteLine(runner.LeapYear(cleansed) ? "yay" : "nay");
     }
 
 
