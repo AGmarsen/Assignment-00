@@ -34,7 +34,7 @@ public class HelloworldTester
         runMainWithInput("2000").Should().Be("yay");
         runMainWithInput("1999").Should().Be("nay");
         runMainWithInput("1900").Should().Be("nay");
-        runMainWithInput("1904").Should().Be("yay");
+        runMainWithInput("1904").Should().Be("nay");
     }
 
     private String runMainWithInput(String input) {
